@@ -5,8 +5,8 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import stockwave1 from '/public/stockwave-1.png';
-import stockwave2 from '/public/stockwave-2.png';
+import stockwave1 from '/public/stockwave1.png';
+import stockwave2 from '/public/stockwave2.png';
 
 const projects = [
   {
