@@ -35,6 +35,30 @@ const projects = [
     tags: ['React Native', 'Redux', 'Firebase'],
     github: 'https://github.com',
     demo: 'https://demo.com'
+  },
+  {
+    title: 'AI Chat Bot',
+    description: 'An intelligent chatbot powered by machine learning for customer support automation.',
+    image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=800&q=80',
+    tags: ['Python', 'TensorFlow', 'NLP', 'FastAPI'],
+    github: 'https://github.com',
+    demo: 'https://demo.com'
+  },
+  {
+    title: 'Weather Dashboard',
+    description: 'Real-time weather monitoring dashboard with interactive maps and forecasting.',
+    image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80',
+    tags: ['Vue.js', 'D3.js', 'OpenWeather API'],
+    github: 'https://github.com',
+    demo: 'https://demo.com'
+  },
+  {
+    title: 'Task Manager',
+    description: 'A collaborative task management platform with real-time updates and team features.',
+    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80',
+    tags: ['React', 'Socket.io', 'MongoDB'],
+    github: 'https://github.com',
+    demo: 'https://demo.com'
   }
 ];
 
@@ -43,11 +67,23 @@ export function Projects() {
     <div className="bg-gray-900 py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-white mb-12 text-center">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Swiper
+          modules={[Navigation, Pagination]}
+          navigation
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: { slidesPerView: 1, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 30 },
+            1024: { slidesPerView: 3, spaceBetween: 30 },
+          }}
+          className="projects-swiper"
+        >
           {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+            <SwiperSlide key={index}>
+              <ProjectCard {...project} />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </div>
   );
@@ -69,10 +105,9 @@ function ProjectCard({ title, description, image, images, tags, github, demo }: 
       <div className="relative h-48 overflow-hidden">
         {images ? (
           <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Navigation, Pagination]}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000 }}
             className="h-full w-full"
           >
             {images.map((img, index) => (
