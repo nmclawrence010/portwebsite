@@ -5,16 +5,16 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import stockwave1 from '../public/stockwave-1.png';
-import stockwave2 from '../public/stockwave-2.png';
+import stockwave1 from '/public/stockwave-1.png';
+import stockwave2 from '/public/stockwave-2.png';
 
 const projects = [
   {
     title: 'Stockwave',
     description: 'A portfolio tracker and screener for US based equities. (Currently undergoing a redesign)',
     images: [
-          '/images/stockwave-1.png',
-          '/images/stockwave-2.png'
+          stockwave1,
+          stockwave2
     ],
     tags: ['Next.js', 'React', 'Typescript', 'AWS'],
     github: 'https://github.com/nmclawrence010/Stockwave',
