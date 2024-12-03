@@ -14,7 +14,7 @@ export function Hero() {
           />
         </div>
         <h1 className="text-6xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600">
-          Hello, I'm Niall
+          Niall Mclawrence
         </h1>
         <p className="text-xl mb-8 max-w-2xl text-center text-gray-300">
           Graduate Software Engineer from Northern Ireland.
