@@ -11,8 +11,8 @@ const projects = [
     title: 'Stockwave',
     description: 'A portfolio tracker and screener for US based equities. (Currently undergoing a redesign)',
     images: [
-      '/stockwave-1.png',
-      '/stockwave-2.png'
+      '/public/stockwave-1.png',
+      '/public/stockwave-2.png'
     ],
     tags: ['Next.js', 'React', 'Typescript', 'AWS'],
     github: 'https://github.com/nmclawrence010/Stockwave',
