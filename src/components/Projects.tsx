@@ -103,7 +103,7 @@ interface ProjectCardProps {
   images?: string[];
   tags: string[];
   github: string;
-  demo: string;
+  demo?: string;
 }
 
 function ProjectCard({ title, description, image, images, tags, github, demo }: ProjectCardProps) {
@@ -159,12 +159,17 @@ function ProjectCard({ title, description, image, images, tags, github, demo }: 
               <Github size={20} />
               <span>Code</span>
             </a>
-            <a
-              href={demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
-            >
+            {demo && (
+              <a
+                href={demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+              >
+                <ExternalLink size={20} />
+                <span>Demo</span>
+              </a>
+            )}
               <ExternalLink size={20} />
               <span>Demo</span>
             </a>
