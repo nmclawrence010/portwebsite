@@ -112,8 +112,11 @@ function ProjectCard({ title, description, image, images, tags, github, demo }: 
       <div className="relative h-48 overflow-hidden">
         {images ? (
           <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
+            modules={[Navigation, Pagination, Autoplay]}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
             pagination={{ clickable: true }}
             className="h-full w-full"
           >
