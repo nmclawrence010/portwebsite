@@ -173,9 +173,6 @@ function ProjectCard({ title, description, image, images, tags, github, demo }: 
                 <span>Demo</span>
               </a>
             )}
-              <ExternalLink size={20} />
-              <span>Demo</span>
-            </a>
           </div>
         </div>
       </div>
