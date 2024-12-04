@@ -46,7 +46,7 @@ const projects = [
     title: 'FM23 Position Calculator',
     description: 'Scripts for the game Football Manager 23 to calculate the statistical best position of a player based on their in game attributes.',
     images: [
-          fm,
+          fm1,
           fm2
     ],    tags: ['Python'],
     github: 'https://github.com/nmclawrence010/fm23-position-calculator',
