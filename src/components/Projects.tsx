@@ -7,6 +7,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import stockwave1 from '/public/stockwave1.png';
 import stockwave2 from '/public/stockwave2.png';
+import fm1 from '/public/fm23.png';
+import fm2 from '/public/fmoutput.png';
+import animalmanagement from '/public/animalprofile.png';
+import lrhpic from '/public/lrhpic.png';
+import fpllineup from  '/public/fpllineup.png';
+
 
 const projects = [
   {
@@ -23,26 +29,27 @@ const projects = [
   {
     title: 'LRH Store',
     description: 'An E-commerce store for a local business.',
-    image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=80',
+    image: lrhpic,
     tags: ['React', 'TypeScript', 'Stripe'],
     github: 'https://github.com/nmclawrence010/lrh-store',
     demo: 'https://demo.com'
   },
   {
-    title: 'Fitness Tracker',
-    description: 'A mobile-first web application for tracking workouts and nutrition with progress visualization.',
-    image: 'https://images.unsplash.com/photo-1461773518188-b3e86f98242f?auto=format&fit=crop&w=800&q=80',
-    tags: ['React Native', 'Redux', 'Firebase'],
+    title: 'FPL Lineup Predictor',
+    description: 'An automated app that scrapes predicted football lineups from the web and updates itself in real-time using GitHub Actions',
+    image: fpllineup,
+    tags: ['React', 'Vite', 'Github Actions', 'Octoparse'],
     github: 'https://github.com',
     demo: 'https://demo.com'
   },
   {
-    title: 'AI Chat Bot',
-    description: 'An intelligent chatbot powered by machine learning for customer support automation.',
-    image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=800&q=80',
-    tags: ['Python', 'TensorFlow', 'NLP', 'FastAPI'],
-    github: 'https://github.com',
-    demo: 'https://demo.com'
+    title: 'FM23 Position Calculator',
+    description: 'Scripts for the game Football Manager 23 to calculate the statistical best position of a player based on their in game attributes.',
+    images: [
+          fm,
+          fm2
+    ],    tags: ['Python'],
+    github: 'https://github.com/nmclawrence010/fm23-position-calculator',
   },
   {
     title: 'Weather Dashboard',
