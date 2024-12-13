@@ -12,6 +12,8 @@ import fm2 from '/public/fmoutput.png';
 import animalmanagement from '/public/animalprofile.png';
 import lrhpic from '/public/lrhpic.png';
 import fpllineup from  '/public/fpllineup.png';
+import idlapp1 from  '/public/idlapp1.png';
+import idlapp2 from  '/public/idlapp2.png';
 
 
 const projects = [
@@ -26,13 +28,22 @@ const projects = [
     github: 'https://github.com/nmclawrence010/Stockwave',
     demo: 'https://stockwave.app/'
   },
+    {
+    title: 'Irish Dota League',
+    description: 'Web app for players to register and join teams as well as track the league standings and report match scores for an online dota league.',
+    images: [
+          idlapp1,
+          idlapp2
+    ],
+    tags: ['React', 'Supabase', 'Auth0', 'Typescript'],
+    github: 'https://github.com/nmclawrence010/Irish-Dota-League',
+  },
   {
     title: 'LRH Store',
     description: 'An E-commerce store for a local business.',
     image: lrhpic,
     tags: ['React', 'TypeScript', 'Stripe'],
     github: 'https://github.com/nmclawrence010/lrh-store',
-    demo: 'https://demo.com'
   },
   {
     title: 'FPL Lineup Predictor',
@@ -40,7 +51,6 @@ const projects = [
     image: fpllineup,
     tags: ['React', 'Vite', 'Github Actions', 'Octoparse'],
     github: 'https://github.com',
-    demo: 'https://demo.com'
   },
   {
     title: 'FM23 Position Calculator',
@@ -50,23 +60,8 @@ const projects = [
           fm2
     ],    tags: ['Python'],
     github: 'https://github.com/nmclawrence010/fm23-position-calculator',
-  },
-  {
-    title: 'Weather Dashboard',
-    description: 'Real-time weather monitoring dashboard with interactive maps and forecasting.',
-    image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80',
-    tags: ['Vue.js', 'D3.js', 'OpenWeather API'],
-    github: 'https://github.com',
-    demo: 'https://demo.com'
-  },
-  {
-    title: 'Task Manager',
-    description: 'A collaborative task management platform with real-time updates and team features.',
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80',
-    tags: ['React', 'Socket.io', 'MongoDB'],
-    github: 'https://github.com',
-    demo: 'https://demo.com'
   }
+
 ];
 
 export function Projects() {
