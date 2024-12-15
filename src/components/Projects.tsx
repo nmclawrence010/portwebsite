@@ -37,6 +37,7 @@ const projects = [
     ],
     tags: ['React', 'Supabase', 'Auth0', 'Typescript'],
     github: 'https://github.com/nmclawrence010/Irish-Dota-League',
+    demo: 'https://irishdotaleague.com/'
   },
   {
     title: 'LRH Store',
